@@ -1,4 +1,4 @@
-package com.dand.start;
+package com.dand.start.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +7,10 @@ import lombok.Setter;
 @Setter
 public class User {
 
+    private Long id;
+
     private String username;
 
     private String password;
+
 }

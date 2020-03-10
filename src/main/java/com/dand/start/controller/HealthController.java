@@ -1,6 +1,7 @@
 package com.dand.start.controller;
 
-import com.dand.start.User;
+
+import com.dand.start.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,7 @@ public class HealthController {
         return "success!!";
     }
 
-    @GetMapping("/")
+    @GetMapping("/index")
     public String login(){
         return "login";
     }
