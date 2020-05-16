@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Builder
 @ToString
 @Entity
-@Table(name="role",uniqueConstraints=@UniqueConstraint(columnNames="name"))
+@Table(name="role")
 public class Role {
 	
 	@Id

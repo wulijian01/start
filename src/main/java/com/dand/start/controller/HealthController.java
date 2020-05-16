@@ -3,22 +3,15 @@ package com.dand.start.controller;
 
 import com.dand.start.entity.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class HealthController {
 
-    @PostMapping("/login2")
-    @ResponseBody
-    public String health(User user){
-        System.out.println(user.getUsername());
-        return "success!!";
-    }
+    @GetMapping("/index1")
+    public String login(Model model){
 
-    @GetMapping("/index")
-    public String login(){
-        return "login";
+        return "index";
     }
 }
